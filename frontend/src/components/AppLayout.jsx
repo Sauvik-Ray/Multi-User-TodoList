@@ -17,7 +17,7 @@ export default function AppLayout({ children }) {
             className="text-lg font-semibold tracking-wide 
             text-gray-800 dark:text-gray-100"
           >
-            Multi-User Todo SaaS
+            Multi-User Todo List
           </h1>
 
           {/* Placeholder for future nav items */}
