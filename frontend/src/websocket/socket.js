@@ -3,6 +3,7 @@ import { Client } from "@stomp/stompjs";
 let client = null;
 let currentRoom = null;
 let connected = false;
+const WS_URL = import.meta.env.VITE_WS_URL;
 
 /**
  * Connects to WebSocket and subscribes to a specific room.
@@ -14,7 +15,7 @@ export function connectSocket(roomId, onMessage) {
   currentRoom = roomId;
 
   client = new Client({
-    brokerURL: "ws://localhost:8080/ws",
+    brokerURL: WS_URL,
     reconnectDelay: 2000,
     heartbeatIncoming: 4000,
     heartbeatOutgoing: 4000,
