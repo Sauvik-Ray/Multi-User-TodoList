@@ -11,6 +11,6 @@ export default defineConfig({
     },
   },
   server: {
-    historyApiFallback: true, // ⭐ REQUIRED FOR /join/:key
+    historyApiFallback: true, 
   },
 });
